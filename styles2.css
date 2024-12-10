@@ -1,0 +1,307 @@
+
+ body {
+    margin: 0;
+    font-family: 'Abel', sans-serif;
+    max-height:200%; 
+    box-sizing: border-box;
+    min-height: 100vh;
+  }
+  
+  body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;  
+      height: 100%;  /* Adjust to increase the ano hieght ng page (ito naka 200% kasi dalawang screen sya) */
+
+      /*Background*/
+      background-image: url('images/bg pattern2.jpg');
+      background-repeat: repeat;
+      background-size: 200px 200px;  
+      transform-origin: center;
+      opacity: 0.60;
+      z-index: -1;  /* Keeps it behind the content kasi background nga */
+      background-position: -50% 0
+      
+
+  }
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; 
+    margin: 0 auto; 
+    width: 100%; 
+    max-width: 81vw; /*adjust depending on the version 81 og value*/ 
+    height: 110px;
+    background-color: rgba(33, 32, 43, 0.92);
+    border-radius: 0 0 41px 41px; /* 0 0 41px 41px og value*/ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%; 
+    z-index: 1000;
+    color: white;
+    transition: all 0.3s ease; 
+  }
+  
+  header h1 {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-size: 48px;
+    transition: all 0.3s ease;
+  }
+  
+  header h1 a {
+      text-decoration: none;
+      color: white;
+      position: relative;
+      margin-left: 30px;
+      font-family: 'Abel', sans-serif;
+      font-size: 48px;
+      font-weight: 100;
+      margin-right: -95px;
+      transition: all 0.3s ease;
+      }
+  
+  header h1 img {
+          width: 95px;
+          height: 95px;
+          position: relative;
+          right: 93%; 
+          top: 5px;
+          transition: all 0.3s ease;
+      }
+  
+  
+  header.small {
+    height: 60px; 
+    padding: 0 5%; 
+    border-radius: 0 0 20px 20px; /*0 0 20px 20px og value*/
+  }
+  
+  header.small h1 {
+    font-size: 32px; 
+  }
+  
+  header.small h1 a{
+      font-size: 20px; 
+      margin-right: -125px;
+      transition: all 0.3s ease;
+    }
+  header.small h1 img {
+    width: 40px; 
+    height: 40px;
+    position: relative;
+    right: 250%; 
+  
+  }
+  
+  header nav a {
+    text-decoration: none;
+    padding: 20px;
+    font-size: 32px;
+    color: #FFFFFF;
+    font-family: 'Abel', sans-serif;
+    font-weight: 0;
+    transition: transform 0.3s ease;
+  }
+  
+  header.small nav a {
+    font-size: 16px; 
+    transition: all 0.3s ease;
+  }
+  
+header nav a {
+    text-decoration: none;
+	margin-right: 30px;
+    padding: 0;
+    font-size: 32px;
+    color: #FFFFFF;
+    font-family: 'Abel', sans-serif;
+    font-weight: 0;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect: Smooth underline */
+header nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #FFFFFF;
+    transition: width 0.5s ease;
+}
+
+/* When hovering over the link */
+header nav a:hover::after {
+    width: 100%;
+}
+
+/* Current Page Style */
+header nav a.current::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%; /* Full underline for the active page */
+    height: 2px;
+    background-color: #FFFFFF;
+    transition: width 0.3s ease;
+}
+
+/* Current link retains underline */
+header nav a.current {
+    text-decoration: none; /* Avoid double underline */
+}
+  
+  /* Background Pattern */
+  .admin-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('pattern.png'); /* Replace with your actual background pattern URL */
+    background-repeat: repeat;
+    background-size: contain;
+  }
+  
+  /* Title */
+  .admin-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Password Box */
+  .password-box {
+    background: linear-gradient(135deg, #0d47a1, #283593);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .password-label {
+    display: block;
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .password-input {
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  .confirm-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1e88e5;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .confirm-button:hover {
+    background-color: #1565c0;
+  }
+  
+  /* Exit Link */
+  .exit-link {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #1565c0;
+    text-decoration: none;
+  }
+  
+  .exit-link:hover {
+    text-decoration: underline;
+  }
+  
+
+  /* Titles */
+.admin-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .notifications-title {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  /* Notifications Panels */
+  .notifications-container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .panel {
+    background: linear-gradient(135deg, #0d47a1, #283593);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    color: #fff;
+  }
+  
+  .panel-title {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  
+  /* Donations Panel */
+  .donation-list,
+  .inquiry-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  .donation-item,
+  .inquiry-item {
+    background-color: #1e88e5;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .donation-item:hover,
+  .inquiry-item:hover {
+    background-color: #1565c0;
+  }
+  
+  /* Links */
+  .links {
+    margin-top: 20px;
+  }
+  
+  .links a {
+    font-size: 0.9rem;
+    color: #1565c0;
+    margin-right: 15px;
+    text-decoration: none;
+  }
+  
+  .links a:hover {
+    text-decoration: underline;
+  }

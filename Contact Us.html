@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <title>Contact Us ║ House of Sarang</title>
+            <meta charset="UTF-8">
+            
+            <!--Icon-->
+                <link rel="icon" href="images/Logo.png">
+            <!--FONTS-->
+                <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@400;700&display=swap" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+             <!--CSS Links-->   
+                <link rel="stylesheet" href="Style.css" >
+
+   
+
+        </head>
+
+        <body>
+            <header id="header" class="header">
+                <h1>
+                    <a href="Home Page.html">
+                        <img src="images/Logo.png" alt="Logo">
+                    </a>
+                    
+                    <a href="Home Page.html">
+                        HOUSE OF SARANG
+                    </a>
+                </h1>
+                    <nav>
+                        <a href="Home Page.html">HOME</a>
+                        <a href="About Us.html" target="_self">ABOUT US</a>
+                        <a href="Donate.html" target="_self">DONATE</a>
+                        <a href="Contact Us.html" class="current" target="_self">CONTACT US</a>
+                    </nav>
+					
+            </header>
+    <main>
+    <!-- Top Section with Image -->
+    <section class="contact-header">
+	<img src="images/Contact BG.png" alt="Contact BG">
+      <div class="overlay-text">
+        <h1>CONTACT US</h1>
+        <p><img src="images/telephone-fill.png">09055293405</p>
+		<p><img src="images/envelope-fill.png">kkothouseofsarang@gmail.com</p>
+		<p><img src="images/geo-alt-fill.png">20 J.P. Rizal St., Maharlika Village, Taguig City</p> 
+      </div>
+    </section>
+
+    <!-- Form Section -->
+  <section class="contact-form">
+  <form id="contactForm" onsubmit="showPopup(event)">
+    <div class="form-row">
+      <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="firstName" required>
+      </div>
+      <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" name="lastName" required>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number (Optional)</label>
+        <input type="tel" id="phone" name="phone">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="message">What can we help you with?</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+    </div>
+    <button type="submit" class="submit-btn">Submit</button>
+  </form>
+</section>
+
+<!-- Pop-up Modal -->
+<div id="popup" class="popup hidden">
+  <div class="popup-content">
+    <h2>Successfully Submitted</h2>
+    <p>Your message has been received. We'll get back to you shortly!</p>
+    <button class="close-btn" onclick="hidePopup()">Close</button>
+  </div>
+</div>
+
+  </main>
+
+    <footer>
+        <div class="footer-container">
+            <!-- More Information Section -->
+            <div class="footer-section">
+                <h4>More Information for</h4>
+                <ul>
+                    <li><a href="#">Adoption Laws</a></li>
+                    <li><a href="#">Professionals</a></li>
+                    <li><a href="#">Steps for adoption</a></li>
+                </ul>
+            </div>
+
+            <!-- I Want To Section -->
+            <div class="footer-section">
+                <h4>I want to:</h4>
+                <ul>
+                    <li><a href="#">Donate</a></li>
+                    <li><a href="#">Sponsor</a></li>
+                    <li><a href="#">Visit</a></li>
+                </ul>
+            </div>
+
+            <!-- General Questions Section -->
+            <div class="footer-section">
+                <h4>General asked Questions</h4>
+                <ul>
+                    <li><a href="#">What items are not accepted?</a></li>
+                    <li><a href="#">Can I get a receipt for my donation?</a></li>
+                    <li><a href="#">How are donations used?</a></li>
+                </ul>
+            </div>
+
+            <!-- Stay in Touch Section -->
+            <div class="footer-section stay-in-touch">
+                <h4>Stay in Touch</h4>
+                <form>
+                    <input type="email" placeholder="Sir Alex pogi" required>
+                      <div class="social-icons">
+                          <a href="https://www.facebook.com/house.sarang.33/" target="_blank"><img src="images/facebook icon.png" alt="Facebook"></a>
+                          <a href="https://www.instagram.com/explore/locations/605216754/house-of-sarang-taguig-city/" target="_blank"><img src="images/instagram icon.png" alt="Instagram"></a>
+                      </div>
+                </form>
+                <p>Stay in touch for opportunities to build forever connections for youth in care.</p>
+                
+                <div class="footer-terms">
+                    <a href="#">Terms and Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+            
+            <!--Script Links-->  
+            <script src="ExternalScript.js"></script>
+            
+        </body>
+    </html>

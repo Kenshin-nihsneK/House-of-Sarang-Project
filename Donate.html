@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <title>Donate ║ House of Sarang</title>
+            <meta charset="UTF-8">
+            
+            <!--Icon-->
+                <link rel="icon" href="https://scontent.xx.fbcdn.net/v/t1.15752-9/459620600_1204014383982902_659912718499370925_n.png?_nc_cat=100&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeHwzL6283IDxgjgqYktHbznOVowaFKKjS05WjBoUoqNLZY3n0VwpZZQ1vqdWboxiWYzSwYSuda5gjnTyzr2l5yl&_nc_ohc=QSQo0QVBkeYQ7kNvgHsw3A0&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QG7o4Wini5eCidaUp-WtDAIOyfTJVVywUU80f4Xnm5xnA&oe=677DC5C1".  >
+            <!--FONTS-->
+                <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@400;700&display=swap" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+             <!--CSS Links-->   
+                <link rel="stylesheet" href="Style.css" >
+
+   
+
+        </head>
+
+        <body>
+            <header id="header" class="header">
+                <h1>
+                    <a href="Home Page.html">
+                        <img src="images/Logo.png" alt="Logo">
+                    </a>
+                    
+                    <a href="Home Page.html">
+                        HOUSE OF SARANG
+                    </a>
+                </h1>
+                    <nav>
+                        <a href="Home Page.html">HOME</a>
+                        <a href="About Us.html" target="_self">ABOUT US</a>
+                        <a href="Donate.html" class="current" target="_self">DONATE</a>
+                        <a href="Contact Us.html" target="_self">CONTACT US</a>
+                    </nav>
+					
+            </header>
+
+<main>
+        <div class="donation-container">
+    <form class="donation-form">
+        <!-- GCash Section -->
+        <div class="donation-option gcash-section">
+            <!-- Radio Button and GCash Label -->
+            <label for="gcash" class="gcash-label">
+                <input type="radio" id="gcash" name="donationType" value="gcash">
+                <span>GCash</span>
+            <div class="gcash-content">
+                <div class="gcash-details">
+                    <ul class="gcash-steps">
+                        <li>
+                            <img src="images/hand-index-thumb.png" alt="Step Icon" class="step-icon">
+                            Log in to GCash and tap Pay QR.
+                        </li>
+                        <li>
+                            <img src="images/qr-code-scan.png" alt="Step Icon" class="step-icon">
+                            Scan our QR code.
+                        </li>
+                        <li>
+                            <img src="images/cash-coin.png" alt="Step Icon" class="step-icon">
+                            Input the total amount and tap Next.
+                        </li>
+                        <li>
+                            <img src="images/hand-thumbs-up.png" alt="Step Icon" class="step-icon">
+                            Review all details then tap on Pay.
+                        </li>
+                    </ul>
+                </div>
+					<img src="images/GCASH QR.png" alt="GCash QR Code" class="qr-code">
+            </label>
+			</div>
+        </div>
+
+<div class="donation-option">
+    <label for="valuableGoods" class="goods-label">
+        <input type="radio" id="valuableGoods" name="donationType" value="valuableGoods">
+        <span>Valuable Goods</span>
+    </label>
+
+    <!-- Goods Details Section -->
+    <div class="goods-details">
+        <div class="goods-row">
+            <div class="goods-field">
+                <label for="itemName">Name of Item</label>
+                <input type="text" id="itemName" placeholder="Enter item name">
+            </div>
+            <div class="goods-field">
+                <label for="itemType">Type of Item</label>
+                <select id="itemType">
+                    <option value="Clothes">Clothes</option>
+                    <option value="Food">Food</option>
+                    <option value="Toys">Toys</option>
+                    <option value="Others">Others</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="goods-row"> 
+            <div class="goods-field">
+                <label for="deliveryMethod">Delivery Method</label>
+                <select id="deliveryMethod">
+                    <option value="Pickup">Pickup</option>
+                    <option value="Drop Off">Drop Off</option>
+                </select>
+            </div>
+            <div class="goods-field">
+                <label for="quantity">Quantity</label>
+                <input type="number" id="quantity" min="1" placeholder="Enter quantity">
+            </div>
+            <div class="goods-field">
+                <label for="expirationDate">Expiration Date</label>
+                <input type="date" id="expirationDate">
+            </div>
+        </div>
+    </div>
+</div>
+
+                
+            </form>
+				<!-- Submit Button -->
+<button id="submitBtn">Submit</button>
+
+<!-- Pop-up Modal -->
+<div id="popupModal" class="popup-modal">
+    <div class="popup-content">
+        <img src="images/check.gif" alt="Checkmark" class="popup-icon"> <!-- Replace with your icon path -->
+        <h2>Successfully Submitted</h2>
+        <p>Your generosity means everything to us and to the community we serve.</p>
+        <button id="closePopupBtn" class="popup-close-btn">Done</button>
+    </div>
+</div>
+			</div>	
+            <!-- Information Section -->
+            <div class="info-box">
+                <p>We accept various types of donations as long as they are in good condition and still usable. In-kind donations are non-refundable and cannot be exchanged or returned.</p>
+                <p>Thank you for supporting our mission!</p>
+                <p>For questions and additional information, please <a href="Contact Us.html">contact us</a>.</p>
+            
+        </div>
+		
+    </main>
+            
+            
+            <footer>
+        <div class="footer-container">
+            <!-- More Information Section -->
+            <div class="footer-section">
+                <h4>More Information for</h4>
+                <ul>
+                    <li><a href="#">Adoption Laws</a></li>
+                    <li><a href="#">Professionals</a></li>
+                    <li><a href="#">Steps for adoption</a></li>
+                </ul>
+            </div>
+
+            <!-- I Want To Section -->
+            <div class="footer-section">
+                <h4>I want to:</h4>
+                <ul>
+                    <li><a href="#">Donate</a></li>
+                    <li><a href="#">Sponsor</a></li>
+                    <li><a href="#">Visit</a></li>
+                </ul>
+            </div>
+
+            <!-- General Questions Section -->
+            <div class="footer-section">
+                <h4>General asked Questions</h4>
+                <ul>
+                    <li><a href="#">What items are not accepted?</a></li>
+                    <li><a href="#">Can I get a receipt for my donation?</a></li>
+                    <li><a href="#">How are donations used?</a></li>
+                </ul>
+            </div>
+
+            <!-- Stay in Touch Section -->
+            <div class="footer-section stay-in-touch">
+                <h4>Stay in Touch</h4>
+                <form>
+                    <input type="email" placeholder="Sir Alex pogi" required>
+                      <div class="social-icons">
+                          <a href="https://www.facebook.com/house.sarang.33/" target="_blank"><img src="images/facebook icon.png" alt="Facebook"></a>
+                          <a href="https://www.instagram.com/explore/locations/605216754/house-of-sarang-taguig-city/" target="_blank"><img src="images/instagram icon.png" alt="Instagram"></a>
+                      </div>
+                </form>
+                <p>Stay in touch for opportunities to build forever connections for youth in care.</p>
+                
+                <div class="footer-terms">
+                    <a href="#">Terms and Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+            
+            <!--Script Links-->  
+            <script src="ExternalScript.js"></script>
+            
+        </body>
+    </html>
